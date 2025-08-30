@@ -1,6 +1,6 @@
-package Transactions;
+package transactions;
 
-import Models.Appointment;
+import models.Appointment;
 import java.util.List;
 
 public interface AppointmentManager {

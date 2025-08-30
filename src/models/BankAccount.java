@@ -1,13 +1,17 @@
-package Models;
+package models;
 
-public class BankAccount {
+import enums.BankAccountType;
+
+public class BankAccount extends Account {
 
     private String accountNumber;
     private String currency;
     private double balance;
-    private String bankAccountType;
+    private BankAccountType bankAccountType;
 
-    public BankAccount(long number, String currency, double balance, String bankAccountType) {
+    public BankAccount(long number, String currency, double balance, BankAccountType bankAccountType) {
+
+        super(number, currency, balance);
 
         this.accountNumber = String.format("%016d", number);
         if (Long.toString(number).length() > 16){
@@ -44,12 +48,21 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public String getBankAccountType() {
+    public BankAccountType getBankAccountType() {
         return bankAccountType;
     }
 
-    public void setBankAccountType(String bankAccountType) {
+    public void setBankAccountType(BankAccountType bankAccountType) {
         this.bankAccountType = bankAccountType;
     }
 
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", currency='" + currency + '\'' +
+                ", balance=" + balance +
+                ", bankAccountType=" + bankAccountType +
+                '}';
+    }
 }

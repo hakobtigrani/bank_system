@@ -1,8 +1,9 @@
-package Transactions;
+package transactions;
 
-import Exceptions.BankTransactionException;
-import Exceptions.InsufficientFundsException;
-import Models.BankAccount;
+import exceptions.BankTransactionException;
+import exceptions.InsufficientFundsException;
+import models.Account;
+import models.BankAccount;
 
 public interface Transaction {
 
@@ -10,4 +11,5 @@ public interface Transaction {
     void withdraw(double amount) throws InsufficientFundsException, BankTransactionException;
     void transfer(double amount, BankAccount toAccount) throws InsufficientFundsException, BankTransactionException;
 
+    void transfer(Account to, double amount);
 }
