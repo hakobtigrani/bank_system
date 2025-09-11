@@ -2,9 +2,6 @@ import enums.BankAccountType;
 import enums.CardStatus;
 import enums.CardType;
 import enums.Currency;
-import exceptions.BankTransactionException;
-import exceptions.InsufficientFundsException;
-import models.Account;
 import models.BankAccount;
 import models.CardAccount;
 import transactions.BankAccountTransaction;
@@ -23,6 +20,7 @@ public class Main {
                 CardType.VISA,
                 500.0,
                 CardStatus.ACTIVE,
+                // TODO
                 Currency.USD.name());
 
         BankAccount valod = new BankAccount(
@@ -47,11 +45,8 @@ public class Main {
         transaction1.deposit(800);
         System.out.println(seroj);
         transaction1.withdraw(1000);
-        System.out.println();
 
-        System.out.println("\n");
-
-        System.out.println(valod);
+        System.out.println("\n" + valod);
         transaction2.deposit(50);
         System.out.println(valod);
         System.out.println(mesrop);

@@ -1,12 +1,14 @@
 package models;
 
+import enums.Currency;
+
 public class Account {
 
     private final String accountNumber;
-    private final String currency;
+    private final Currency currency;
     private double balance;
 
-    public Account(long number, String currency, double balance) {
+    public Account(long number, Currency currency, double balance) {
 
         this.accountNumber = String.format("%016d", number);
         if (Long.toString(number).length() > 16){
@@ -20,7 +22,7 @@ public class Account {
 
     public String getAccountNumber() { return accountNumber; }
 
-    public String getCurrency() { return currency; }
+    public Currency getCurrency() { return currency; }
 
     public double getBalance() { return balance; }
 

@@ -1,15 +1,18 @@
 package models;
 
 import enums.BankAccountType;
+import enums.Currency;
+
+// TODO CURRENCY
 
 public class BankAccount extends Account {
 
     private String accountNumber;
-    private String currency;
+    private Currency currency;
     private double balance;
     private BankAccountType bankAccountType;
 
-    public BankAccount(long number, String currency, double balance, BankAccountType bankAccountType) {
+    public BankAccount(long number, Currency currency, double balance, BankAccountType bankAccountType) {
 
         super(number, currency, balance);
 
@@ -32,11 +35,11 @@ public class BankAccount extends Account {
         this.accountNumber = accountNumber;
     }
 
-    public String getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(String currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 

@@ -2,7 +2,7 @@ package models;
 
 import enums.CardStatus;
 import enums.CardType;
-
+import enums.Currency;
 import java.time.YearMonth;
 
 public class CardAccount extends Account {
@@ -13,10 +13,12 @@ public class CardAccount extends Account {
     private CardType cardType;
     private double balance;
     private CardStatus cardStatus;
-    private String currency;
+    private Currency currency;
+
+    // TODO CURRENCY
 
     public CardAccount(long accNumber, short cvvNumber, YearMonth expirationDate,
-                       CardType cardType, double balance, CardStatus cardStatus, String currency) {
+                       CardType cardType, double balance, CardStatus cardStatus, Currency currency) {
 
         super(accNumber, currency, balance);
 

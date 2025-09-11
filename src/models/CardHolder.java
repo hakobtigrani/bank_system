@@ -4,11 +4,11 @@ public class CardHolder {
 
     private String passportNumber;
     private String fullName;
-    private String address;
+    private Address address;
     private String cardList;
-    private String bankAccount;
+    private BankAccount bankAccount;
 
-    public CardHolder(String passportNumber, String fullName, String address, String cardList, String bankAccount) {
+    public CardHolder(String passportNumber, String fullName, Address address, String cardList, BankAccount bankAccount) {
         this.passportNumber = passportNumber;
         this.fullName = fullName;
         this.address = address;
@@ -32,11 +32,11 @@ public class CardHolder {
         this.fullName = fullName;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -48,11 +48,11 @@ public class CardHolder {
         this.cardList = cardList;
     }
 
-    public String getBankAccount() {
+    public BankAccount getBankAccount() {
         return bankAccount;
     }
 
-    public void setBankAccount(String bankAccount) {
+    public void setBankAccount(BankAccount bankAccount) {
         this.bankAccount = bankAccount;
     }
 
