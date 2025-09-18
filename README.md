@@ -11,9 +11,6 @@ A simple banking system implemented in **Java**, designed to simulate basic bank
 - [Requirements](#requirements)  
 - [Installation & Running](#installation--running)  
 - [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Future Enhancements](#future-enhancements)  
-- [License](#license)
 
 ---
 
