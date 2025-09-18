@@ -7,10 +7,9 @@ A simple banking system implemented in **Java**, designed to simulate basic bank
 ## Table of Contents
 
 - [Features](#features)  
-- [Getting Started](#getting-started)  
+- [Getting Started](#getting-started-and-installation)  
 - [Requirements](#requirements)  
-- [Installation & Running](#installation--running)  
-- [Usage](#usage)  
+- [Installation & Running](#getting-started-and-installation)  
 
 ---
 
@@ -31,7 +30,7 @@ A simple banking system implemented in **Java**, designed to simulate basic bank
 
 ---
 
-## Getting Started / Installation & Running
+## Getting Started and Installation
 
 Steps to run the project:
 
