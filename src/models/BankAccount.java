@@ -3,8 +3,6 @@ package models;
 import enums.BankAccountType;
 import enums.Currency;
 
-// TODO CURRENCY
-
 public class BankAccount extends Account {
 
     private String accountNumber;

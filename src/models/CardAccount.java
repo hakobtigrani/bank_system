@@ -15,8 +15,6 @@ public class CardAccount extends Account {
     private CardStatus cardStatus;
     private Currency currency;
 
-    // TODO CURRENCY
-
     public CardAccount(long accNumber, short cvvNumber, YearMonth expirationDate,
                        CardType cardType, double balance, CardStatus cardStatus, Currency currency) {
 

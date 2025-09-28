@@ -20,19 +20,18 @@ public class Main {
                 CardType.VISA,
                 500.0,
                 CardStatus.ACTIVE,
-                // TODO
-                Currency.USD.name());
+                Currency.USD);
 
         BankAccount valod = new BankAccount(
                 1234567890123456L,
-                Currency.USD.name(),
+                Currency.USD,
                 500,
                 BankAccountType.CREDIT
                 );
 
         BankAccount mesrop = new BankAccount(
                 6374859273847569L,
-                Currency.USD.name(),
+                Currency.USD,
                 200,
                 BankAccountType.DEBIT
         );
